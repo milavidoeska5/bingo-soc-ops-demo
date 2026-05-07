@@ -36,6 +36,16 @@ uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 Then open: **http://localhost:8000**
 
+## ✅ Development Checklist
+
+Before committing changes:
+
+```bash
+uv run ruff check .
+uv run uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+uv run pytest
+```
+
 ---
 
 ## 🧱 Tech Stack

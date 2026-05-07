@@ -416,11 +416,17 @@ button:disabled {
 @keyframes neon-color-cycle {
     0%, 100% {
         border-color: rgba(6, 182, 212, 0.9);
-        border-width: 1px;
+        box-shadow:
+            0 0 8px rgba(6, 182, 212, 0.75),
+            0 0 16px rgba(236, 72, 153, 0.6),
+            inset 0 0 10px rgba(236, 72, 153, 0.25);
     }
     50% {
         border-color: rgba(236, 72, 153, 0.9);
-        border-width: 2px;
+        box-shadow:
+            0 0 10px rgba(236, 72, 153, 0.95),
+            0 0 18px rgba(6, 182, 212, 0.7),
+            inset 0 0 12px rgba(6, 182, 212, 0.3);
     }
 }
 

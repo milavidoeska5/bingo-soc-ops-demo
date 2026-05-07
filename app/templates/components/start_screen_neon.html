@@ -37,7 +37,7 @@
 
 <script>
     for (const button of document.querySelectorAll(".neon-ripple-btn:not([data-ripple-bound])")) {
-        button.dataset.rippleBound = "true";
+        button.setAttribute("data-ripple-bound", "true");
         button.addEventListener("pointerdown", (event) => {
             const rect = button.getBoundingClientRect();
             const ripple = document.createElement("span");

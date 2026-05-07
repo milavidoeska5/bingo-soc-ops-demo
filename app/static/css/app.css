@@ -416,9 +416,11 @@ button:disabled {
 @keyframes neon-color-cycle {
     0%, 100% {
         border-color: rgba(6, 182, 212, 0.9);
+        border-width: 1px;
     }
     50% {
         border-color: rgba(236, 72, 153, 0.9);
+        border-width: 2px;
     }
 }
 
@@ -436,5 +438,19 @@ button:disabled {
 @media (max-width: 480px) {
     .neon-grid-bg::before {
         background-size: 30px 30px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .animate-neon-grid-scan,
+    .animate-letter-spacing-expand,
+    .animate-pulse-neon,
+    .animate-pulse-neon-text,
+    .animate-stagger-card-in,
+    .animate-ripple,
+    .neon-grid-bg::before,
+    .neon-border-duo {
+        animation: none !important;
+        transition: none !important;
     }
 }

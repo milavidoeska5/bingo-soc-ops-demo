@@ -36,14 +36,9 @@
 </div>
 
 <script>
-    if (!document.body.dataset.neonRippleBound) {
-        document.body.dataset.neonRippleBound = "true";
-        document.addEventListener("pointerdown", (event) => {
-            const button = event.target.closest(".neon-ripple-btn");
-            if (!button) {
-                return;
-            }
-
+    for (const button of document.querySelectorAll(".neon-ripple-btn:not([data-ripple-bound])")) {
+        button.dataset.rippleBound = "true";
+        button.addEventListener("pointerdown", (event) => {
             const rect = button.getBoundingClientRect();
             const ripple = document.createElement("span");
             ripple.className = "animate-ripple ripple-dot";

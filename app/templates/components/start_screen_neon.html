@@ -1,7 +1,7 @@
 <div id="game-container">
     <div class="neon-grid-bg flex flex-col items-center justify-center min-h-full p-6">
         <div class="neon-start-shell text-center max-w-sm w-full">
-            <h1 class="text-4xl text-white-bold mb-2 neon-title animate-pulse-neon" aria-label="Soc Ops">
+            <h1 class="text-4xl text-white-bold mb-2 neon-title animate-pulse-neon-text" aria-label="Soc Ops">
                 <span class="neon-title-letter animate-letter-spacing-expand" style="--letter-delay: 0s;">S</span>
                 <span class="neon-title-letter animate-letter-spacing-expand" style="--letter-delay: 0.06s;">o</span>
                 <span class="neon-title-letter animate-letter-spacing-expand" style="--letter-delay: 0.12s;">c</span>
@@ -13,13 +13,13 @@
             <p class="text-lg text-white-bold mb-8 neon-subtitle">Social Bingo</p>
 
             <div class="neon-rules-grid mb-8">
-                <div class="neon-rule-card neon-border-cyan animate-stagger-card-in" style="--stagger-delay: 0s;">
+                <div class="neon-rule-card neon-border-cyan animate-pulse-neon animate-stagger-card-in" style="--stagger-delay: 0s;">
                     Find people who match the questions
                 </div>
-                <div class="neon-rule-card neon-border-magenta animate-stagger-card-in" style="--stagger-delay: 0.18s;">
+                <div class="neon-rule-card neon-border-magenta animate-pulse-neon animate-stagger-card-in" style="--stagger-delay: 0.18s;">
                     Tap a square when you find a match
                 </div>
-                <div class="neon-rule-card neon-border-duo animate-stagger-card-in" style="--stagger-delay: 0.36s;">
+                <div class="neon-rule-card neon-border-duo animate-pulse-neon animate-stagger-card-in" style="--stagger-delay: 0.36s;">
                     Get 5 in a row to win!
                 </div>
             </div>
@@ -28,7 +28,7 @@
                 hx-post="/start"
                 hx-target="#game-container"
                 hx-swap="outerHTML"
-                class="w-full text-white-bold py-4 px-8 rounded-lg text-lg transition-all neon-start-button animate-pulse-neon neon-ripple-btn"
+                class="w-full text-white-bold py-4 px-8 rounded-lg text-lg transition-colors neon-start-button animate-pulse-neon neon-ripple-btn"
                 aria-label="Start Game">
                 Start Game
             </button>

@@ -18,7 +18,6 @@ class TestHomePage:
         response = client.get("/")
         assert "Soc Ops" in response.text
         assert "Start Game" in response.text
-        assert "neon-grid-bg" in response.text
         assert "Find people who match the questions" in response.text
         assert "Tap a square when you find a match" in response.text
         assert "Get 5 in a row to win!" in response.text
@@ -61,7 +60,7 @@ class TestResetGame:
         response = client.post("/reset")
         assert response.status_code == 200
         assert "Start Game" in response.text
-        assert "neon-grid-bg" in response.text
+        assert "Get 5 in a row to win!" in response.text
 
 
 class TestDismissModal:

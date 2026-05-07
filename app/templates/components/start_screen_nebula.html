@@ -1,0 +1,29 @@
+<div id="game-container">
+<div class="relative flex flex-col items-center justify-center min-h-full p-6 bg-gradient-nebula overflow-hidden">
+    <div class="nebula-shape nebula-shape-1"></div>
+    <div class="nebula-shape nebula-shape-2"></div>
+    <div class="nebula-shape nebula-shape-3"></div>
+
+    <div class="text-center max-w-sm w-full relative z-50">
+        <h1 class="text-4xl font-bold mb-2 nebula-title animate-gradient-pulse animate-underline-sweep">Soc Ops</h1>
+        <p class="text-lg mb-8 nebula-subtitle">Social Bingo</p>
+
+        <div class="glassmorphism rounded-lg p-6 border border-nebula-card mb-8 animate-fade-in animate-float">
+            <h2 class="font-semibold mb-3 nebula-title">How to play</h2>
+            <ul class="text-left text-sm space-y-2 nebula-subtitle">
+                <li>• Find people who match the questions</li>
+                <li>• Tap a square when you find a match</li>
+                <li>• Get 5 in a row to win!</li>
+            </ul>
+        </div>
+
+        <button
+            hx-post="/start"
+            hx-target="#game-container"
+            hx-swap="outerHTML"
+            class="w-full nebula-button font-semibold py-4 px-8 rounded-lg text-lg animate-border-glow-cycle">
+            Start Game
+        </button>
+    </div>
+</div>
+</div>

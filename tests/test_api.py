@@ -19,6 +19,8 @@ class TestHomePage:
         assert "Soc Ops" in response.text
         assert "Start Game" in response.text
         assert "How to play" in response.text
+        assert "bg-gradient-nebula" in response.text
+        assert "glassmorphism" in response.text
 
     def test_home_sets_session_cookie(self, client: TestClient) -> None:
         response = client.get("/")
@@ -59,6 +61,7 @@ class TestResetGame:
         assert response.status_code == 200
         assert "Start Game" in response.text
         assert "How to play" in response.text
+        assert "bg-gradient-nebula" in response.text
 
 
 class TestDismissModal:

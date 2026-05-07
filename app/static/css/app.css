@@ -310,12 +310,10 @@ button:disabled {
 
 .animate-pulse-neon {
     animation: pulse-neon-glow 0.7s ease-in-out infinite;
-    will-change: filter, box-shadow;
 }
 
 .animate-pulse-neon-text {
     animation: pulse-neon-text 0.7s ease-in-out infinite;
-    will-change: text-shadow;
 }
 
 .animate-stagger-card-in {

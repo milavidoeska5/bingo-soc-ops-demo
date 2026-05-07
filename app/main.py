@@ -60,7 +60,7 @@ async def reset_game(request: Request) -> Response:
     session.reset_game()
     return templates.TemplateResponse(
         request,
-        "components/start_screen.html",
+        "components/start_screen_cosmic.html",
         {"session": session, "GameState": GameState},
     )
 

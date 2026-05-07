@@ -1,0 +1,36 @@
+<div id="game-container">
+<div class="cosmic-start-screen flex flex-col items-center justify-center min-h-full p-6">
+    <div class="cosmic-accent cosmic-accent-cyan"></div>
+    <div class="cosmic-accent cosmic-accent-gold"></div>
+    <div class="cosmic-stars" aria-hidden="true">
+        <span class="cosmic-star"></span>
+        <span class="cosmic-star"></span>
+        <span class="cosmic-star"></span>
+        <span class="cosmic-star"></span>
+        <span class="cosmic-star"></span>
+        <span class="cosmic-star"></span>
+    </div>
+
+    <div class="text-center max-w-sm cosmic-content">
+        <h1 class="text-4xl font-bold mb-2 cosmic-title animate-scale-hover glow-enhanced">Soc Ops</h1>
+        <p class="text-lg mb-8 cosmic-tagline animate-bounce-emphasis">Get 5 in a row to win!</p>
+
+        <div class="cosmic-rules-card rounded-lg p-6 border mb-8 animate-slide-in animate-pulse-glow">
+            <h2 class="font-semibold mb-3 cosmic-heading">How to play</h2>
+            <ul class="text-left text-sm space-y-2 cosmic-list">
+                <li class="animate-stagger-in" data-stagger="0">• Find people who match the questions</li>
+                <li class="animate-stagger-in" data-stagger="1">• Tap a square when you find a match</li>
+                <li class="animate-stagger-in" data-stagger="2">• Get 5 in a row to win!</li>
+            </ul>
+        </div>
+
+        <button
+            hx-post="/start"
+            hx-target="#game-container"
+            hx-swap="outerHTML"
+            class="w-full font-semibold py-4 px-8 rounded-lg text-lg cosmic-start-btn glow-enhanced transition-all">
+            Start Game
+        </button>
+    </div>
+</div>
+</div>

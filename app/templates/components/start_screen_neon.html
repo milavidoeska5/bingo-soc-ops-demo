@@ -37,8 +37,8 @@
 </div>
 
 <script>
-    if (!window.__neonRippleBound) {
-        window.__neonRippleBound = true;
+    if (!document.body.dataset.neonRippleBound) {
+        document.body.dataset.neonRippleBound = "true";
         document.addEventListener("pointerdown", (event) => {
             const button = event.target.closest(".neon-ripple-btn");
             if (!button) {
